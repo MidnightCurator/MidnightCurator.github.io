@@ -7,10 +7,10 @@
 				
 				<body>
 								<h1>
-												This is a header. it sucks fr.
+												This is a header. It sucks.
 								</h1>
 								<p>
-												And that's fo real
+												Ong
 								</p>
 								
 								<script src="scripts/testbutton.js"></script>
@@ -24,10 +24,43 @@
 								<script>
 											window.onload = function() {
 											document.getElementById('boolState')
-											.innerHTML = textIsShown
+											.innerHTML = textIsShown;
 											}
 								</script>
 								
 								<p id="boolState"></p>
+								
+								<script type="module">
+												// Import the functions you need from the SDKs you need
+												import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+												import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
+												
+												// TODO: Add SDKs for Firebase products that you want to use
+												// https://firebase.google.com/docs/web/setup#available-libraries
+												
+												// Your web app's Firebase configuration
+												// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+												const firebaseConfig = {
+																apiKey: "AIzaSyA1M8zMW3YW_cN0yQrn0VvBvqXyDQYVBUc",
+																authDomain: "website-data-cf218.firebaseapp.com",
+																databaseURL: "https://website-data-cf218-default-rtdb.firebaseio.com/",
+																projectId: "website-data-cf218",
+																storageBucket: "website-data-cf218.appspot.com",
+																messagingSenderId: "652293190405",
+																appId: "1:652293190405:web:030aaeba84f2968738fd6c",
+																measurementId: "G-KT9EC49CFL"
+												};
+												
+												// Initialize Firebase
+												const app = initializeApp(firebaseConfig);
+												const db = getDatabase(app);
+												
+												function writeData(path, data) {
+																set(ref(db, path), data);
+												}
+												
+								</script>
+								
+								<button id="dbTest" onclick="writeData('num', {accessDate: Date()})">DataBase Button</button>
 				</body>
 </html>
