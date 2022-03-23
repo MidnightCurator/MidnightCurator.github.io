@@ -21,6 +21,13 @@
 															
 								<p id="testPar"></p>
 								
-								<p id="boolState" onload="document.getElementById('boolState').innerHTML = textIsShown"></p>
+								<script>
+											window.onload = function() {
+											document.getElementById('boolState')
+											.innerHTML = textIsShown
+											}
+								</script>
+								
+								<p id="boolState"></p>
 				</body>
 </html>
