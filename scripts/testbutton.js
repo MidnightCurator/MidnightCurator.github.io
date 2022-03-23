@@ -8,4 +8,5 @@ function changeButton(buttonId) {
 								document.getElementById(buttonId).innerHTML = "";
 								textIsShown = false;
 				}
+				document.getElementById("boolState").innerHTML = textIsShown;
 }
