@@ -1,0 +1,108 @@
+body {
+    background-color: #e6d7ae;
+    font-size: 100%;
+}
+
+h1 {
+    color: #b92929fa;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.75em;
+}
+
+p {
+    color: #0CF490;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
+}
+
+.headerbar {
+    height: 7.5%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #363533;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.headerbar .openbtnholder {
+    height: 100%;
+    width: 7.5%;
+    top: 0;
+    left: 0;
+    color: #000000;
+    display: block;
+}
+
+.headerbar a {
+    padding: 0 0 0 0.25em;
+    margin: -0.2em 0.25em 0 0;
+    text-align: left;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    color: #d8d3c6;
+    display: block;
+    transition: 0.3s;
+}
+
+.headerbar a:hover {
+    color: #efdf9a;
+}
+
+.headerbar p {
+    text-align: center;
+    font-size: 1em;
+    display: block;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #363533;
+    overflow-x: hidden;
+    padding-top: 3em;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    margin-top: 0.8em;
+    padding: 0.05em 0 0.2em 0;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    color: #d8d3c6;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #efdf9a;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.5em;
+    margin-top: -0.25em;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0.25em;
+    padding-right: 0.5em;
+    padding-bottom: 0;
+    padding-left: 0.25em;
+}
+
+.sidenav .closebtn:hover {
+    color: #ed9292;
+}
